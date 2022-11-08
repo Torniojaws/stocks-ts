@@ -1,0 +1,51 @@
+$menuHeight: 40px;
+$linkWidth: 128px;
+
+nav#siteMenuDesktop {
+  background-color: #94938a;
+  display: flex;
+  height: $menuHeight;
+  justify-content: center;
+}
+
+/* Hide desktop menu on mobile devices */
+@media all and (max-width: 800px) {
+  nav#siteMenuDesktop {
+    display: none;
+  }
+}
+
+ul#siteMenuLinks {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 960px;
+  padding: 0;
+  
+  li {
+    align-items: center;
+    display: flex;
+    height: $menuHeight;
+    justify-content: center;
+    list-style: none;
+    width: $linkWidth;
+    
+    &:hover {
+      background-color: white;
+      a {
+        color: #94938a;
+      }
+    }
+    
+    a {
+      color: white;
+      display: block;
+      height: $menuHeight;
+      text-align: center;
+      text-decoration: none;
+      padding-top: calc($menuHeight / 2);
+      width: $linkWidth;
+    }
+  }
+}

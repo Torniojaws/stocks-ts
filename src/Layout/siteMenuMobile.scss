@@ -1,0 +1,12 @@
+nav#siteMenuMobileButtonOrMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Hide mobile menu on desktop devices */
+@media all and (min-width: 801px) {
+  nav#siteMenuMobileButtonOrMenu {
+    display: none;
+  }
+}
