@@ -4,4 +4,9 @@ header#siteHeader {
   display: flex;
   height: 80px;
   justify-content: center;
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }

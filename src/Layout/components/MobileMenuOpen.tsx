@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { HamburgerButton } from '../../components/Buttons/HamburgerButton';
 import { IMenuItems } from '../../types/layout.types';
 import './mobileMenuOpen.scss';
@@ -33,7 +34,7 @@ export const MobileMenuOpen = ({ menuVisible, setMenuVisible }: IParams) => {
         <HamburgerButton menuVisible={menuVisible} setMenuVisible={setMenuVisible}/>
         <ul id='siteMenuMobileLinks'>
         {menuItems.map(menuItem =>
-          <li key={menuItem.label}><a href={menuItem.url}>{menuItem.label}</a></li>
+          <li key={menuItem.label}><Link to={menuItem.url} onClick={() => setMenuVisible(false)}>{menuItem.label}</Link></li>
         )}
         </ul>
       </nav>

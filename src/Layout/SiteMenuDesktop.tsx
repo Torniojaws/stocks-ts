@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { IMenuItems } from '../types/layout.types';
 import './siteMenuDesktop.scss'
 
@@ -25,7 +26,7 @@ export const SiteMenuDesktop = () => {
     <nav id='siteMenuDesktop'>
       <ul id='siteMenuLinks'>
       {menuItems.map(menuItem =>
-        <li key={menuItem.label}><a href={menuItem.url}>{menuItem.label}</a></li>
+        <li key={menuItem.label}><Link to={menuItem.url}>{menuItem.label}</Link></li>
       )}
       </ul>
     </nav>
