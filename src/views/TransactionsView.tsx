@@ -1,5 +1,7 @@
+import './views.scss';
+
 export const TransactionsView = () => {
   return (
-    <div>Transactions view</div>
+    <div className='viewContainer'>Transactions view</div>
   )
 }

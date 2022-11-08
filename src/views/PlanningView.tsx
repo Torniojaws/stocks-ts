@@ -1,5 +1,7 @@
+import './views.scss';
+
 export const PlanningView = () => {
   return (
-    <div>Planning view</div>
+    <div className='viewContainer'>Planning view</div>
   )
 }

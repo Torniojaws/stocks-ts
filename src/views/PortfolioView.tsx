@@ -1,5 +1,7 @@
+import './views.scss';
+
 export const PortfolioView = () => {
   return (
-    <div>Portfolio view</div>
+    <div className='viewContainer'>Portfolio view</div>
   )
 }

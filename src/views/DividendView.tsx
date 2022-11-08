@@ -1,5 +1,7 @@
+import './views.scss';
+
 export const DividendView = () => {
   return (
-    <div>Dividend view</div>
+    <div className='viewContainer'>Dividend view</div>
   )
 }
