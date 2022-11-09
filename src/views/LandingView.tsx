@@ -1,7 +1,5 @@
-import './views.scss';
+import "./views.scss";
 
 export const LandingView = () => {
-  return (
-    <div className='viewContainer'>Landing view</div>
-  )
-}
+  return <div className="viewContainer">Landing view</div>;
+};

@@ -22,7 +22,7 @@ ul#siteMenuLinks {
   justify-content: center;
   min-width: 960px;
   padding: 0;
-  
+
   li {
     align-items: center;
     display: flex;
@@ -30,14 +30,14 @@ ul#siteMenuLinks {
     justify-content: center;
     list-style: none;
     width: $linkWidth;
-    
+
     &:hover {
       background-color: white;
       a {
         color: #94938a;
       }
     }
-    
+
     a {
       color: white;
       display: block;

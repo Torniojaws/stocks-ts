@@ -1,6 +1,6 @@
 # Stocks
 
-Stock tracker using TypeScript and React. Create portfolios, track their performance, show 
+Stock tracker using TypeScript and React. Create portfolios, track their performance, show
 dividends (times, values, etc), plan future investments. That kind of stuff.
 
 ## Scripts

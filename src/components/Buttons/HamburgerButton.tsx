@@ -1,5 +1,5 @@
-import { ReactComponent as HamburgerIcon } from './hamburger.svg';
-import './hamburgerButton.scss'
+import { ReactComponent as HamburgerIcon } from "./hamburger.svg";
+import "./hamburgerButton.scss";
 
 interface IParams {
   menuVisible: boolean;
@@ -9,7 +9,7 @@ interface IParams {
 export const HamburgerButton = ({ menuVisible, setMenuVisible }: IParams) => {
   return (
     <div onClick={() => setMenuVisible(!menuVisible)}>
-      <HamburgerIcon id='hamburgerButton' />
+      <HamburgerIcon id="hamburgerButton" />
     </div>
-  )
-}
+  );
+};

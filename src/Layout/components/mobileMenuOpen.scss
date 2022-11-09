@@ -8,28 +8,28 @@ div#openedMobileMenuContainer {
   left: 0;
   display: flex;
   flex-direction: row;
-  
+
   nav#menuItems {
     background-color: silver;
     height: 100vh;
     width: 70vw;
   }
-  
+
   div#closeArea {
     width: 30vw;
   }
-  
+
   ul#siteMenuMobileLinks {
     position: relative;
     top: 28px;
     left: 20px;
     margin: 0;
     padding: 0;
-    
+
     li {
       list-style: none;
       height: 40px;
-      
+
       a {
         color: #2f3f40;
         text-decoration: none;
@@ -37,4 +37,3 @@ div#openedMobileMenuContainer {
     }
   }
 }
-
