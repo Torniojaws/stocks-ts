@@ -1,21 +1,84 @@
-import { IPortfolio } from '../types/portfolio.types';
+import { IPortfolio } from "../types/portfolio.types";
 
 export const mockedPortfolios: IPortfolio[] = [
   {
-    portfolioName: 'My example portfolio',
+    portfolioName: "My example portfolio",
     stocks: [
-      { ticker: 'SAMPO.HE', name: 'Sampo', position: 9999, costAverage: 40.4, costAverageCurrency: 'EUR', currency: 'EUR' },
-      { ticker: 'FSR', name: 'Fisker', position: 7777, costAverage: 6.66, costAverageCurrency: 'EUR', currency: 'USD' },
-      { ticker: 'RC', name: 'Ready Capital', position: 5555, costAverage: 13.37, costAverageCurrency: 'EUR', currency: 'USD' },
-    ]
+      {
+        ticker: "SAMPO.HE",
+        name: "Sampo",
+        position: 9999,
+        costAverage: 40.4,
+        costAverageCurrency: "EUR",
+        currency: "EUR",
+        sharePrice: 46,
+        changePercentage: 3,
+      },
+      {
+        ticker: "FSR",
+        name: "Fisker",
+        position: 7777,
+        costAverage: 6.66,
+        costAverageCurrency: "EUR",
+        currency: "USD",
+        sharePrice: 6.4,
+        changePercentage: -2.5,
+      },
+      {
+        ticker: "RC",
+        name: "Ready Capital",
+        position: 5555,
+        costAverage: 13.37,
+        costAverageCurrency: "EUR",
+        currency: "USD",
+        sharePrice: 13.4,
+        changePercentage: 0.5,
+      },
+    ],
   },
   {
-    portfolioName: 'A second portfolio',
+    portfolioName: "A second portfolio with a long name",
     stocks: [
-      { ticker: 'CTY1S.HE', name: 'Citycon', position: 5000, costAverage: 6, costAverageCurrency: 'EUR', currency: 'EUR' },
-      { ticker: 'NDA-FI.HE', name: 'Nordea', position: 121212, costAverage: 8.5, costAverageCurrency: 'EUR', currency: 'EUR' },
-      { ticker: 'SAMPO.HE', name: 'Sampo', position: 6789, costAverage: 40.5, costAverageCurrency: 'EUR', currency: 'EUR' },
-      { ticker: 'TITAN.HE', name: 'Titanium', position: 9876, costAverage: 13.37, costAverageCurrency: 'EUR', currency: 'EUR' },
-    ]
-  }
+      {
+        ticker: "CTY1S.HE",
+        name: "Citycon",
+        position: 5000,
+        costAverage: 6,
+        costAverageCurrency: "EUR",
+        currency: "EUR",
+        sharePrice: 6.6,
+        changePercentage: 10,
+      },
+      {
+        ticker: "NDA-FI.HE",
+        name: "Nordea",
+        position: 121212,
+        costAverage: 8.5,
+        costAverageCurrency: "EUR",
+        currency: "EUR",
+        sharePrice: 9,
+        changePercentage: 7.5,
+      },
+      {
+        ticker: "SAMPO.HE",
+        name: "Sampo",
+        position: 6789,
+        costAverage: 40.5,
+        costAverageCurrency: "EUR",
+        currency: "EUR",
+        sharePrice: 45,
+        changePercentage: 10,
+      },
+      {
+        ticker: "TITAN.HE",
+        name: "Titanium",
+        position: 9876,
+        costAverage: 13.37,
+        costAverageCurrency: "EUR",
+        currency: "EUR",
+        sharePrice: 13.5,
+        changePercentage: 0.5,
+      },
+    ],
+  },
 ];

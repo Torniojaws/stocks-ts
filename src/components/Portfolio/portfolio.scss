@@ -1,58 +1,44 @@
-div#portfolioHeader {
+div.portfolioHeader {
   background-color: #2f3f40;
   border: solid 1px black;
   color: white;
   display: flex;
   flex-direction: row;
   height: 32px;
-  width: 1280px;
-  
-  div.columnShort {
-    padding-left: 8px;
-    padding-top: 8px;
-    width: 160px;
-  }
-  
-  div.column {
-    padding-left: 8px;
-    padding-top: 8px;
-    width: 320px;
-  }
 }
 
-@media all and (max-width: 1280px) {
-  div#portfolioHeader {
-    width: calc(100vw - 24px);
-  }
-}
-
-div#portfolioRow {
+div.portfolioRow {
   background-color: white;
   border: solid 1px black;
   border-top: none;
   color: #2f3f40;
   display: flex;
   flex-direction: row;
-  height: 32px;
-  width: 1280px;
-  
-  div.columnShort {
-    border-right: solid 1px black;
-    padding-left: 8px;
-    padding-top: 8px;
-    width: 160px;
-  }
-  
-  div.column {
-    border-right: solid 1px black;
-    padding-left: 8px;
-    padding-top: 8px;
-    width: 320px;
+}
+
+div.column.desktop {
+  padding-top: 8px;
+  padding-left: 8px;
+  width: 160px;
+}
+
+div.column.mobile {
+  padding-top: 8px;
+  padding-left: 2px;
+  width: 20vw;
+  overflow: scroll;
+}
+
+@media all and (max-width: 1279px) {
+  div.portfolioHeader.desktop,
+  div.portfolioRow.desktop {
+    display: none;
   }
 }
 
-@media all and (max-width: 1280px) {
-  div#portfolioRow {
-    width: calc(100vw - 24px);
+@media all and (min-width: 1280px) {
+  div.portfolioHeader.mobile,
+  div.portfolioRow.mobile {
+    display: none;
   }
 }
